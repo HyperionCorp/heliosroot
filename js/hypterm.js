@@ -13,6 +13,7 @@ $(document).keyup(function(event) {
     	console.log($('#cmdline').val());
         $('#outputterm').append($('#cmdline').val() + "\n");
         $('#outputterm').scrollTop($('#outputterm')[0].scrollHeight);
+        document.getElementById("cmdline").value = document.getElementById("cmdline").defaultValue;
         var cmdtbl = commandwarg.split("@");
         var cmd = cmdtbl[0];
         var cmdargs = cmdtbl;
