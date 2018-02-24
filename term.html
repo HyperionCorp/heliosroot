@@ -10,7 +10,7 @@
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+      
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
@@ -65,7 +65,7 @@
   <br />
   <br />
   <div>
-  <textarea readonly style="height: 50vh; width: 80vw; resize: none;" id="outputterm">
+  <textarea readonly onchange='console.log("mew");' style="height: 50vh; width: 80vw; resize: none;" id="outputterm">
   Welcome to the Helios Terminal
   Log in please
   </textarea>
@@ -74,12 +74,7 @@
   <input id="cmdline" type="text" class="validate" style="color: black;"/>
   <label for="cmdline" style="color: black;">heliosroot # ~></label>
   </div>
+<script type="text/javascript" src="js/hypterm.js"></script>
 
-	<script type="text/javascript" src="js/hypterm.js"></script>
-  <script>
-        $(document).ready(function(){
-            $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
-        });
-</script>
 </body>
 </html>
