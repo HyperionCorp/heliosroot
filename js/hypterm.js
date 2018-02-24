@@ -26,8 +26,5 @@ $(document).keyup(function(event) {
 
         }
 
-		if(cmd == "help"){
-			$('#outputterm').append("Helios Terminal Help v0.1" + "\n" + "login <@args> - log in as CEO or Vice CEO" + "\n");
-        }
     }
 });
