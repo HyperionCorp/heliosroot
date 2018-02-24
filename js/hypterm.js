@@ -36,6 +36,15 @@ $(document).keyup(function(event) {
 
         }
 
+      	if(cmd == "login" && args == "4466393774" && loggedin == false){
+        	loggedin = true;
+        	$('#outputterm').append("Welcome, Commander of the Weaponry! You are now logged in!" + "\n");
+        	acc.play();
+
+
+        }
+
+
         if(cmd == "mshot" && args == "trace" && loggedin == true){
         	$('#outputterm').append("Moonshot tracing... Ready to fire" + "\n");
         	mr.play();
