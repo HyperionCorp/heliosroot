@@ -4,7 +4,7 @@ var act = new Audio('activated.ogg');
 var acc = new Audio('access.ogg');
 var mr = new Audio('mready.ogg');
 var mf = new Audio('mfired.ogg');
-
+$(".asdf").sideNav();
 $('document').ready(function(){act.play();});
 
 $(document).keyup(function(event) {
