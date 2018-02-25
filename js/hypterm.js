@@ -21,7 +21,7 @@ $(document).keyup(function(event) {
 		var cmdargs2 = cmdargs.join("@");
 		var args = cmdargs2.split("@");
 
-        if(cmd == "login" && args == "706986372" && loggedin == false){
+        if(cmd == "login" && md5(args) == "f4eb586ac200e11eb02e444d489ed522" && loggedin == false){
         	loggedin = true;
         	$('#outputterm').append("Welcome, CEO! You are now logged in!" + "\n");
         	acc.play();
@@ -29,7 +29,7 @@ $(document).keyup(function(event) {
 
         } 
 
-      	if(cmd == "login" && args == "2163592584" && loggedin == false){
+      	if(cmd == "login" && md5(args) == "ae4ff3cd814e2c65e50928b8130f6673" && loggedin == false){
         	loggedin = true;
         	$('#outputterm').append("Welcome, Vice CEO! You are now logged in!" + "\n");
         	acc.play();
@@ -37,7 +37,7 @@ $(document).keyup(function(event) {
 
         }
 
-      	if(cmd == "login" && args == "4466393774" && loggedin == false){
+      	if(cmd == "login" && md5(args) == "99d5add11b7a4837a13bd65d653c33ce" && loggedin == false){
         	loggedin = true;
         	$('#outputterm').append("Welcome, Commander of the Weaponry! You are now logged in!" + "\n");
         	acc.play();
