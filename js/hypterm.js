@@ -4,6 +4,13 @@ var act = new Audio('activated.ogg');
 var acc = new Audio('access.ogg');
 var mr = new Audio('mready.ogg');
 var mf = new Audio('mfired.ogg');
+
+var dispatchl = new Audio('lbotd.ogg');
+var actb = new Audio('lbac.ogg');
+var atkb = new Audio('lbat.ogg');
+var evb = new Audio('lbev.ogg');
+var sdb = new Audio('lbsd.ogg');
+
 $(".asdf").sideNav();
 $('document').ready(function(){act.play();});
 
@@ -56,6 +63,41 @@ $(document).keyup(function(event) {
         if(cmd == "mshot" && args == "fire" && loggedin == true){
         	$('#outputterm').append("Moonshot fired!" + "\n");
         	mf.play();
+
+
+        }
+
+        if(cmd == "loaders" && args == "dispatch" && loggedin == true){
+        	$('#outputterm').append("Loaders dispatched" + "\n");
+        	dispatchl.play();
+
+
+        }
+
+        if(cmd == "loaders" && args == "activate" && loggedin == true){
+        	$('#outputterm').append("Loader systems activated" + "\n");
+        	actb.play();
+
+
+        }
+
+        if(cmd == "loaders" && args == "attack" && loggedin == true){
+        	$('#outputterm').append("Loader offensive routines loaded" + "\n");
+        	atkb.play();
+
+
+        }
+
+        if(cmd == "loaders" && args == "evac" && loggedin == true){
+        	$('#outputterm').append("Loaders evacuated" + "\n");
+        	evb.play();
+
+
+        }
+
+        if(cmd == "loaders" && args == "sd" && loggedin == true){
+        	$('#outputterm').append("SELF DESTRUCT LOADERS, BEEP BEEP BEEP BOOM!" + "\n");
+        	sdb.play();
 
 
         }
