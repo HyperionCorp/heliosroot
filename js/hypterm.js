@@ -52,6 +52,14 @@ $(document).keyup(function(event) {
 
         }
 
+        if(cmd == "login" && md5(args) == "1e1675823ed2d24015bfbe4571302a40" && loggedin == false){
+            loggedin = true;
+            $('#outputterm').append("Welcome, Security! You are now logged in!" + "\n");
+            acc.play();
+
+
+        }
+
 
         if(cmd == "mshot" && args == "trace" && loggedin == true){
         	$('#outputterm').append("Moonshot tracing... Ready to fire" + "\n");
