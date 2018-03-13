@@ -19,16 +19,14 @@
 
 
 
-    <style>
-        { margin: 0; padding: 0; }
-        .asdf {
-          display: block;
-        }
-        body {
-          background: url(hbg.png) no-repeat;
-        background-size: 100% 100%;
-      } 
-    </style>
+		<style>
+		    { margin: 0; padding: 0; }
+
+		    body {
+  				background: url(hbg.png) no-repeat;
+				background-size: 100% 100%;
+			} 
+		</style>
 
 
 </head>
@@ -59,41 +57,36 @@
   <nav style="background-color: #FFCC00;">
     <div class="nav-wrapper">
 
-        <img src="logo.png" style="height: 63px; width: 200px"href="#" class="brand-logo center"></img>
-        <ul id="nav-mobile" class="left show-on-large">
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large asdf" id="navmenuthing" style="background-color: #FFCC00; color: black;"><i class="material-icons">menu</i></a>
+      	<img src="logo.png" style="height: 63px; width: 200px"href="#" class="brand-logo center"></img>
+      	<ul id="nav-mobile" class="left hide-on-med-and-down yellow accent-3">
+         <a href="#" data-activates="slide-out" class="button-collapse show-on-large asdf" style="background-color: #FFCC00; color: black;"><i class="material-icons">menu</i></a>
       </ul>
     </div>
   </nav>
-  <div class="tap-target" style="background-color: #FFCC00; color: black;" data-activates="navmenuthing">
-  <div class="tap-target-content">
-    <h5>Here is the menu!</h5>
-    <p>Click outside of this circle to close this help message!</p>
-  </div>
-</div>
+
 
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="helios.jpg"></div>
+    <div class="parallax"><img src="sh1.jpg"></div>
      <div class="container">
-      <ul id="hel">
-        <div class="row center" id="hel">
+      <ul id="spikes">
+        <div class="row center" id="spikes">
           <li style="opacity: 0;">
-          <h5 class="header col s12 light" style="background-color: #FFCC00;">Helios got you covered!</h5>
-          <h5 class="center header col s6 offset-s3 light" style="background-color: black; color: #FFCC00;">The Helios Space Station is best for starting YOUR career today!</h5>
+          <h5 class="header col s12 light" style="background-color: #FFCC00;">With our Amplified Shields, you can even hurt your attackers!</h5>
+          <h5 class="center header col s6 offset-s3 light" style="background-color: black; color: #FFCC00;">30.000$ to 100.000$ price range</h5>
           </li>
         </div>
       </div>
   </div>
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img style="height: 140%" src="lb.jpg"></div>
+    <div class="parallax"><img style="height: 140%" src="sh2.jpg"></div>
      <div class="container">
-      <ul id="lb">
-        <div class="row center" id="lb">
+      <ul id="power">
+        <div class="row center">
           <li style="opacity: 0;">
-          <h5 class="header col s12 light" style="background-color: #FFCC00;">Leading in AI Market!</h5>
-          <h5 class="center header col s6 offset-s3 light" style="background-color: black; color: #FFCC00;">Hyperion's AI is the best one on the market so far!</h5>
+          <h5 class="header col s12 light" style="background-color: #FFCC00;">Our shields are very powerful and are as good as Maliwan shields, without the elemental hassle!</h5>
+          <h5 class="center header col s6 offset-s3 light" style="background-color: black; color: #FFCC00;">And they also have a powersaving mode</h5>
           </li>
         </div>
       </ul>
@@ -101,31 +94,19 @@
   </div>
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img style="" src="wp.jpg"></div>
+    <div class="parallax"><img style="" src="sh3.jpg"></div>
      <div class="container">
-      <ul id="wp">
-        <div class="row center" id="wp">
+      <ul id="defense">
+        <div class="row center" id="defense">
           <li style="opacity: 0;">
-          <h5 class="header col s12 light" style="background-color: #FFCC00;">Precise Weapons!</h5>
-          <h5 class="center header col s6 offset-s3 light" style="background-color: black; color: #FFCC00;">We got the best weapons on the market! Precise and deadly!</h5>
+          <h5 class="header col s12 light" style="background-color: #FFCC00;">Defend yourself and loved ones with our shields! We are No.1 in Defense meanings!</h5>
+          <h5 class="center header col s6 offset-s3 light" style="background-color: black; color: #FFCC00;">Powerful Defense for a small price.</h5>
           </li>
         </div>
       </div>
   </div>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img style="" src="sh.jpg"></div>
-     <div class="container">
-      <ul id="sh">
-        <div class="row center" id="sh">
-          <li style="opacity: 0;">
-          <h5 class="header col s12 light" style="background-color: #FFCC00;">Amplified Shields!</h5>
-          <h5 class="center header col s6 offset-s3 light" style="background-color: black; color: #FFCC00;">Shieldpower at its finest! Help your loved ones!</h5>
-          </li>
-        </div>
-      </div>
-  </div>
-  <script type="text/javascript" src="js/start.js"></script>
+	<script type="text/javascript" src="js/shields.js"></script>
 <script>
         $(document).ready(function(){
             $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
